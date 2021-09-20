@@ -36,4 +36,25 @@
     <string name="newPassword">New Password</string>
     <string name="confirmPassword">Confirm Password</string>
 
+    <!--    For Bulk Schedule-->
+    <string name="bulkSchedule">Bulk Schedule</string>
+
+    <string name="eventTypeText">Event Type</string>
+    <string name="noResidentText">Number of Residents</string>
+    <string name="timeIntervalText">Time</string>
+    <string name="relationshipText">Relationship Type</string>
+    <string name="streetText">Street</string>
+    <string name="dateIntervalText">Date Interval</string>
+    <string name="notifText">Notification Type</string>
+
+    <string name="eventText">-Select Event-</string>
+    <string name="noResidents">Enter number</string>
+    <string name="timeText">-Time Interval-</string>
+    <string name="areaText">-Select Street-</string>
+    <string name="householdText">-Household Member-</string>
+
+    <string name="notifPush">Push</string>
+    <string name="notifEmail">Email</string>
+    <string name="notifApp">App</string>
+
 </resources>
