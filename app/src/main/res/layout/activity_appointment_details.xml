@@ -35,10 +35,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            >
-
-
+            android:orientation="vertical">
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/userAppointmentDetails"
@@ -109,9 +106,9 @@
                 android:id="@+id/AppointmentDetails"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="horizontal"
                 android:layout_marginStart="32dp"
-                android:layout_marginEnd="32dp">
+                android:layout_marginEnd="32dp"
+                android:orientation="horizontal">
 
                 <TextView
                     android:id="@+id/textView6"
@@ -131,9 +128,9 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
                 android:layout_marginStart="32dp"
-                android:layout_marginEnd="32dp">
+                android:layout_marginEnd="32dp"
+                android:orientation="horizontal">
 
                 <EditText
                     android:id="@+id/apptReschedDate"
@@ -156,19 +153,20 @@
                 android:id="@+id/reschedBtn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/reschedBtn"
                 android:layout_marginStart="32dp"
                 android:layout_marginEnd="32dp"
-                android:layout_marginBottom="20dp"/>
+                android:layout_marginBottom="20dp"
+                android:backgroundTint="@color/alphaBlue"
+                android:text="@string/reschedBtn" />
 
             <LinearLayout
                 android:id="@+id/apptDocu1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="vertical"
                 android:layout_marginStart="32dp"
                 android:layout_marginEnd="32dp"
-                android:layout_marginBottom="20dp">
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical">
 
                 <TextView
                     android:id="@+id/documentTypeText"
@@ -188,10 +186,10 @@
                 android:id="@+id/linearApptPurpose"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="vertical"
                 android:layout_marginStart="32dp"
                 android:layout_marginEnd="32dp"
-                android:layout_marginBottom="20dp">
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical">
 
                 <TextView
                     android:id="@+id/apptPurposeText"
@@ -212,7 +210,7 @@
                 android:layout_height="match_parent"
                 android:layout_marginStart="32dp"
                 android:layout_marginEnd="32dp"
-                android:layout_marginBottom="20dp" >
+                android:layout_marginBottom="20dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -244,18 +242,18 @@
                             android:orientation="vertical">
 
                             <TextView
-                                android:id="@+id/textView4"
+                                android:id="@+id/filenameText"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
-                                android:text="TextView" />
+                                android:text="@string/filenameSample" />
 
                             <TextView
-                                android:id="@+id/textView3"
+                                android:id="@+id/fileSize"
                                 android:layout_width="match_parent"
                                 android:layout_height="32dp"
                                 android:layout_weight="1"
-                                android:text="TextView" />
+                                android:text="@string/filesizeSample" />
                         </LinearLayout>
                     </LinearLayout>
                 </LinearLayout>

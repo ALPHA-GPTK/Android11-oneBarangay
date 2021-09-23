@@ -52,4 +52,7 @@
     <string name="purposeText">Purpose</string>
     <string name="apptPurpose">For scholarship purposes.</string>
     <string name="verificationText">Verification</string>
+
+    <string name="filenameSample">filename.png</string>
+    <string name="filesizeSample">1000 kb</string>
 </resources>
