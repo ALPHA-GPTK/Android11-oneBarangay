@@ -36,4 +36,14 @@
     <string name="newPassword">New Password</string>
     <string name="confirmPassword">Confirm Password</string>
 
+    <!--  For Complaints  -->
+    <string name="viewComplaintsTitle">View Complaints</string>
+    <string name="addComplaintTitle">Add Complaint</string>
+    <string name="complaintTypeText">Complaint Type</string>
+    <string name="complaintsText">-Select Complaint-</string>
+    <string name="streetText">Street</string>
+    <string name="contactPlaceholder">Enter Contact</string>
+    <string name="streetPlaceholder">-Select Area-</string>
+    <string name="narrativePlaceholder">Enter your complaint</string>
+
 </resources>
