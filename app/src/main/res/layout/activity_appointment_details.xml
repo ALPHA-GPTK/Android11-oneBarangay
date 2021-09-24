@@ -6,11 +6,11 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/reschedText"
+        android:id="@+id/rescheduleTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="28dp"
-        android:text="@string/reschedText"
+        android:text="Appointment Details"
         android:textColor="@color/black"
         android:textSize="26sp"
         app:layout_constraintBottom_toTopOf="@+id/userProfileScroll"
@@ -29,16 +29,13 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/reschedText"
+        app:layout_constraintTop_toBottomOf="@+id/rescheduleTitle"
         app:layout_constraintVertical_bias="1.0">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            >
-
-
+            android:orientation="vertical">
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/userAppointmentDetails"
@@ -49,12 +46,11 @@
                 android:layout_marginBottom="20dp">
 
                 <LinearLayout
-                    android:id="@+id/linearEventTitle"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
                     <ImageView
-                        android:id="@+id/imageView2"
+                        android:id="@+id/profileImage"
                         android:layout_width="72dp"
                         android:layout_height="72dp"
                         tools:srcCompat="@tools:sample/avatars" />
@@ -72,7 +68,7 @@
                             android:layout_marginLeft="10dp"
                             android:layout_marginEnd="10dp"
                             android:layout_marginRight="10dp"
-                            android:text="@string/resName"
+                            android:text="Prince Carl Velasco"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent" />
 
@@ -84,7 +80,7 @@
                             android:layout_marginLeft="10dp"
                             android:layout_marginEnd="10dp"
                             android:layout_marginRight="10dp"
-                            android:text="@string/profileType"
+                            android:text="Resident"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent" />
 
@@ -96,7 +92,7 @@
                             android:layout_marginLeft="10dp"
                             android:layout_marginEnd="10dp"
                             android:layout_marginRight="10dp"
-                            android:text="@string/profileContact"
+                            android:text="+63 966 920 5284"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent" />
                     </LinearLayout>
@@ -106,7 +102,7 @@
             </androidx.cardview.widget.CardView>
 
             <LinearLayout
-                android:id="@+id/AppointmentDetails"
+                android:id="@+id/appointmentDetails"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="horizontal"
@@ -118,14 +114,14 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="@string/dateText" />
+                    android:text="Date" />
 
                 <TextView
                     android:id="@+id/textView7"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="@string/timeText" />
+                    android:text="Time" />
             </LinearLayout>
 
             <LinearLayout
@@ -136,7 +132,7 @@
                 android:layout_marginEnd="32dp">
 
                 <EditText
-                    android:id="@+id/apptReschedDate"
+                    android:id="@+id/reschedDate"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -144,7 +140,7 @@
                     android:inputType="date" />
 
                 <EditText
-                    android:id="@+id/apptReschedTime"
+                    android:id="@+id/reschedTime"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -171,21 +167,19 @@
                 android:layout_marginBottom="20dp">
 
                 <TextView
-                    android:id="@+id/documentTypeText"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/documentTypeText" />
+                    android:text="Document Type" />
 
                 <TextView
                     android:id="@+id/documentType"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/documentType"
+                    android:text="Barangay Indigency"
                     android:textStyle="bold" />
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/linearApptPurpose"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
@@ -194,16 +188,15 @@
                 android:layout_marginBottom="20dp">
 
                 <TextView
-                    android:id="@+id/apptPurposeText"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/purposeText" />
+                    android:text="Purpose" />
 
                 <TextView
-                    android:id="@+id/apptPurposeField"
+                    android:id="@+id/purposeField"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/apptPurpose"
+                    android:text="For scholarship Purposes"
                     android:textStyle="bold" />
             </LinearLayout>
 
@@ -223,7 +216,7 @@
                         android:id="@+id/verificationSection"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/verificationText" />
+                        android:text="Verification" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -231,7 +224,7 @@
                         android:orientation="horizontal">
 
                         <ImageView
-                            android:id="@+id/imageView"
+                            android:id="@+id/verifyImage"
                             android:layout_width="152dp"
                             android:layout_height="72dp"
                             android:layout_weight="1"
@@ -244,18 +237,18 @@
                             android:orientation="vertical">
 
                             <TextView
-                                android:id="@+id/textView4"
+                                android:id="@+id/filenameText"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
-                                android:text="TextView" />
+                                android:text="filename.png" />
 
                             <TextView
-                                android:id="@+id/textView3"
+                                android:id="@+id/filesizeText"
                                 android:layout_width="match_parent"
                                 android:layout_height="32dp"
                                 android:layout_weight="1"
-                                android:text="TextView" />
+                                android:text="1000 kb" />
                         </LinearLayout>
                     </LinearLayout>
                 </LinearLayout>
@@ -283,7 +276,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="4dp"
-                    android:backgroundTint="@color/alphaBlue"
+                    android:backgroundTint="@color/alphaGray"
                     android:drawableLeft="@drawable/cancel_icon"
                     android:text="@string/cancel" />
 

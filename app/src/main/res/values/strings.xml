@@ -36,20 +36,7 @@
     <string name="newPassword">New Password</string>
     <string name="confirmPassword">Confirm Password</string>
 
-    <!--  For List Appointments  -->
-    <string name="listText">Appointments</string>
 
     <!--  For Reschedule Appointments  -->
-    <string name="reschedText">Appointment Details</string>
-    <string name="dateText">Date</string>
-    <string name="timeText">Time</string>
-    <string name="resName">Resident Name</string>
-    <string name="profileType">Resident</string>
-    <string name="profileContact">(+63) 966 920 5284</string>
     <string name="reschedBtn">Reschedule</string>
-    <string name="documentTypeText">Document Type</string>
-    <string name="documentType">Barangay Indigency</string>
-    <string name="purposeText">Purpose</string>
-    <string name="apptPurpose">For scholarship purposes.</string>
-    <string name="verificationText">Verification</string>
 </resources>
