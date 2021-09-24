@@ -36,4 +36,6 @@
     <string name="newPassword">New Password</string>
     <string name="confirmPassword">Confirm Password</string>
 
+    <!--  For Sign Up  -->
+    <string name="signupBtn">Sign Up</string>
 </resources>
