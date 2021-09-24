@@ -36,4 +36,9 @@
     <string name="newPassword">New Password</string>
     <string name="confirmPassword">Confirm Password</string>
 
+    <!--  For Login  -->
+    <string name="loginTitle">Login</string>
+    <string name="emailAddText">Email Address</string>
+    <string name="loginBtn">LOGIN</string>
+
 </resources>
