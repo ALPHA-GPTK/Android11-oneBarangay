@@ -6,13 +6,13 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/bulkSched"
+        android:id="@+id/addComplaint"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/addComplaintTitle"
         android:textColor="@color/black"
         android:textSize="26sp"
-        app:layout_constraintBottom_toTopOf="@+id/linearComplaints"
+        app:layout_constraintBottom_toTopOf="@+id/linearComplaint"
         app:layout_constraintHorizontal_bias="0.113"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -20,7 +20,7 @@
         app:layout_constraintVertical_bias="0.471" />
 
     <LinearLayout
-        android:id="@+id/linearComplaints"
+        android:id="@+id/linearComplaint"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="72dp"
@@ -31,6 +31,7 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <LinearLayout
+            android:id="@+id/linearComplaintTitle"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginStart="32dp"
@@ -38,7 +39,7 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/eventTypeTextView"
+                android:id="@+id/complaintTitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/complaintTypeText"
@@ -47,7 +48,7 @@
         </LinearLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/eventDrop"
+            android:id="@+id/complaintDrop"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -69,7 +70,7 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <LinearLayout
-            android:id="@+id/linearEventTitle3"
+            android:id="@+id/linearComplaint1"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginStart="32dp"
@@ -84,7 +85,7 @@
                 android:text="@string/contactNumber" />
 
             <TextView
-                android:id="@+id/textView5"
+                android:id="@+id/streetDrop"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -93,7 +94,7 @@
 
 
         <LinearLayout
-            android:id="@+id/linearEventDrop1"
+            android:id="@+id/linearComplaint2"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginStart="32dp"
@@ -101,7 +102,7 @@
             android:orientation="horizontal"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/linearEventTitle3">
+            app:layout_constraintTop_toBottomOf="@id/linearComplaint3">
 
             <com.google.android.material.textfield.TextInputLayout
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
@@ -145,7 +146,7 @@
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/complaintNarrative"
+            android:id="@+id/linearComplaint3"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginStart="32dp"
@@ -155,7 +156,7 @@
             app:layout_constraintStart_toStartOf="parent">
 
             <TextView
-                android:id="@+id/textView"
+                android:id="@+id/complaintNarrativeText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Complaint Narrative" />

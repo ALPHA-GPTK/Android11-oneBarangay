@@ -45,5 +45,9 @@
     <string name="contactPlaceholder">Enter Contact</string>
     <string name="streetPlaceholder">-Select Area-</string>
     <string name="narrativePlaceholder">Enter your complaint</string>
+    <string name="uploadProofText">Upload Proof</string>
+
+    <string name="imageUpload">Image Upload</string>
+    <string name="takePic">Take a Picture</string>
 
 </resources>
