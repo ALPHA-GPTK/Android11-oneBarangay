@@ -38,5 +38,6 @@
 
     <!--  For Login  -->
     <string name="loginBtn">LOGIN</string>
+    <string name="noAcccountYet">Dont have an account? Sign Up</string>
 
 </resources>

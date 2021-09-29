@@ -121,12 +121,13 @@
                 android:text="@string/loginBtn" />
 
             <Button
-                android:id="@+id/cancelBtn"
+                android:id="@+id/signUpLinkBtn"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginBottom="10dp"
                 android:backgroundTint="@color/alphaGray"
-                android:text="@string/cancel" />
+                android:textAllCaps="false"
+                android:text="@string/noAcccountYet" />
 
         </LinearLayout>
 
