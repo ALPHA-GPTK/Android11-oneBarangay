@@ -38,4 +38,5 @@
 
     <!--  For Sign Up  -->
     <string name="signupBtn">Sign Up</string>
+    <string name="alreadyHave">Already have an account? Sign In</string>
 </resources>
