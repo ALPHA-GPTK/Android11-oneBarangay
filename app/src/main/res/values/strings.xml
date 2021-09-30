@@ -36,4 +36,14 @@
     <string name="newPassword">New Password</string>
     <string name="confirmPassword">Confirm Password</string>
 
+    <!--  For Reserve Appointment  -->
+    <string name="setBtn">Set Date and Time</string>
+    <string name="reserveBtn">Reserve</string>
+
+    <string name="docuIndigency">Barangay Indigency</string>
+    <string name="docuLocalEmployment">Barangay Local Employment</string>
+    <string name="docuVerification">Barangay Verification</string>
+    <string name="docuClearance">Barangay Clearance</string>
+    <string name="docuCedula">Cedula</string>
+    <string name="brgyBorrow">Barangay Borrowing</string>
 </resources>
