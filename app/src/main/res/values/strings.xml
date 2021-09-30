@@ -39,4 +39,8 @@
     <!--  For Sign Up  -->
     <string name="signupBtn">Sign Up</string>
     <string name="alreadyHave">Already have an account? Sign In</string>
+    <!--  For Login  -->
+    <string name="loginBtn">LOGIN</string>
+    <string name="noAcccountYet">Dont have an account? Sign Up</string>
+
 </resources>
