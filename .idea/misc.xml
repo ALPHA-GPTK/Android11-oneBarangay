@@ -35,6 +35,12 @@
         <entry key="..\:/KOTLIN/Android11-oneBarangay/app/src/main/res/layout/item_custom_view.xml" value="0.20446096654275092" />
         <entry key="..\:/KOTLIN/Android11-oneBarangay/app/src/main/res/menu/bottom_nav.xml" value="0.259375" />
         <entry key="..\:/KOTLIN/Android11-oneBarangay/app/src/main/res/menu/bottom_nav_selector.xml" value="0.2552083333333333" />
+        <entry key="..\:/oneBarangay/Android11-oneBarangay/app/src/main/res/layout/activity_add_bulk_sched.xml" value="0.371875" />
+        <entry key="..\:/oneBarangay/Android11-oneBarangay/app/src/main/res/layout/activity_add_complaint.xml" value="0.33" />
+        <entry key="..\:/oneBarangay/Android11-oneBarangay/app/src/main/res/layout/activity_appointment_details.xml" value="0.371875" />
+        <entry key="..\:/oneBarangay/Android11-oneBarangay/app/src/main/res/layout/activity_change_password.xml" value="0.371875" />
+        <entry key="..\:/oneBarangay/Android11-oneBarangay/app/src/main/res/layout/activity_view_complaints.xml" value="0.371875" />
+        <entry key="..\:/oneBarangay/Android11-oneBarangay/app/src/main/res/layout/fragment_dashboard.xml" value="0.371875" />
       </map>
     </option>
   </component>
