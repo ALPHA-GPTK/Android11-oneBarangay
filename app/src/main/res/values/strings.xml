@@ -36,6 +36,10 @@
     <string name="newPassword">New Password</string>
     <string name="confirmPassword">Confirm Password</string>
 
+    <!--  For Login  -->
+    <string name="loginBtn">LOGIN</string>
+    <string name="noAcccountYet">Dont have an account? Sign Up</string>
+
     <!-- For Services -->
     <string name="vAppointment">View Appointment</string>
     <string name="vReports">View Reports</string>
