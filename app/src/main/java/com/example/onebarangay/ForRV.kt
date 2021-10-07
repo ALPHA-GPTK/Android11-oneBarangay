@@ -13,7 +13,7 @@ class ForRV : AppCompatActivity() {
         val dataSet : Array<String> = arrayOf("Lorem", "Ipsum", "Dolor", "Sit", "Amet")
 
         val adapter = ItemAdapter(dataSet)
-        announcementRV.layoutManager = LinearLayoutManager(this)
-        announcementRV.adapter = adapter
+//        announcementRV.layoutManager = LinearLayoutManager(this)
+//        announcementRV.adapter = adapter
     }
 }

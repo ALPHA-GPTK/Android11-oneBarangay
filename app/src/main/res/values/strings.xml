@@ -36,4 +36,45 @@
     <string name="newPassword">New Password</string>
     <string name="confirmPassword">Confirm Password</string>
 
+    <!--  For Sign Up  -->
+    <string name="signupBtn">Sign Up</string>
+    <string name="alreadyHave">Already have an account? Sign In</string>
+    <!--  For Login  -->
+    <string name="loginBtn">LOGIN</string>
+    <string name="noAcccountYet">Dont have an account? Sign Up</string>
+
+    <!-- For Services -->
+    <string name="vAppointment">View Appointment</string>
+    <string name="vReports">View Reports</string>
+    <string name="sDocu">Scan Document</string>
+
+    <!--  For Complaints  -->
+    <string name="viewComplaintsTitle">View Complaints</string>
+    <string name="addComplaintTitle">Add Complaint</string>
+    <string name="complaintTypeText">Complaint Type</string>
+    <string name="complaintsText">-Select Complaint-</string>
+    <string name="streetText">Street</string>
+    <string name="contactPlaceholder">Enter Contact</string>
+    <string name="streetPlaceholder">-Select Area-</string>
+    <string name="narrativePlaceholder">Enter your complaint</string>
+    <string name="uploadProofText">Upload Proof</string>
+
+    <string name="imageUpload">Image Upload</string>
+    <string name="takePic">Take a Picture</string>
+    <string name="submit">Submit</string>
+
+    <!--    For Bulk Schedule-->
+    <string name="eventText">-Select Event-</string>
+    <string name="noResidents">Enter number</string>
+    <string name="timeText">-Time Interval-</string>
+    <string name="areaText">-Select Street-</string>
+    <string name="householdText">-Household Member-</string>
+
+    <string name="notifPush">Push</string>
+    <string name="notifEmail">Email</string>
+    <string name="notifApp">App</string>
+
+
+    <!--  For Reschedule Appointments  -->
+    <string name="reschedBtn">Reschedule</string>
 </resources>
