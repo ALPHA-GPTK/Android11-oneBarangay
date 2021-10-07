@@ -71,4 +71,7 @@
     <string name="notifEmail">Email</string>
     <string name="notifApp">App</string>
 
+
+    <!--  For Reschedule Appointments  -->
+    <string name="reschedBtn">Reschedule</string>
 </resources>
