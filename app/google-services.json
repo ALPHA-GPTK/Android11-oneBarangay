@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "761680694644",
+    "firebase_url": "https://test-78b16-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "test-78b16",
+    "storage_bucket": "test-78b16.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:761680694644:android:8f3efd8bcfc9b3a3b27021",
+        "android_client_info": {
+          "package_name": "com.example.onebarangay"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "761680694644-stdghk6rl4isfkp4p44l286n75arbk7m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDwfy1ECDwCM1T28Ncyx43OeGOJXY5ebuk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "761680694644-stdghk6rl4isfkp4p44l286n75arbk7m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
