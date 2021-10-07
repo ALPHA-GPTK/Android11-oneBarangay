@@ -78,12 +78,15 @@
     <string name="no_text_found">No text found in the image.</string>
     <string name="task_cancelled">Task Cancelled</string>
 
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
     <!-- For OCR -->
     <string name="no_text_found">No text found in the image.</string>
     <string name="task_cancelled">Task Cancelled</string>
 
+=======
+>>>>>>> develop
 
     <!--  For Reschedule Appointments  -->
     <string name="reschedBtn">Reschedule</string>
@@ -91,8 +94,11 @@
     <string name="no_text_found">No text found in the image.</string>
     <string name="task_cancelled">Task Cancelled</string>
 
+<<<<<<< HEAD
 =======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> develop
 </resources>
