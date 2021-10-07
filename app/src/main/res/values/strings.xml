@@ -74,7 +74,25 @@
     <string name="notifEmail">Email</string>
     <string name="notifApp">App</string>
 
+    <!-- For OCR -->
+    <string name="no_text_found">No text found in the image.</string>
+    <string name="task_cancelled">Task Cancelled</string>
+
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+    <!-- For OCR -->
+    <string name="no_text_found">No text found in the image.</string>
+    <string name="task_cancelled">Task Cancelled</string>
+
 
     <!--  For Reschedule Appointments  -->
     <string name="reschedBtn">Reschedule</string>
+    <!-- For OCR -->
+    <string name="no_text_found">No text found in the image.</string>
+    <string name="task_cancelled">Task Cancelled</string>
+
+=======
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
 </resources>
