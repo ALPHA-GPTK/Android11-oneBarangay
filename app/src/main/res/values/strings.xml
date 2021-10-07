@@ -41,4 +41,19 @@
     <string name="vReports">View Reports</string>
     <string name="sDocu">Scan Document</string>
 
+    <!--  For Complaints  -->
+    <string name="viewComplaintsTitle">View Complaints</string>
+    <string name="addComplaintTitle">Add Complaint</string>
+    <string name="complaintTypeText">Complaint Type</string>
+    <string name="complaintsText">-Select Complaint-</string>
+    <string name="streetText">Street</string>
+    <string name="contactPlaceholder">Enter Contact</string>
+    <string name="streetPlaceholder">-Select Area-</string>
+    <string name="narrativePlaceholder">Enter your complaint</string>
+    <string name="uploadProofText">Upload Proof</string>
+
+    <string name="imageUpload">Image Upload</string>
+    <string name="takePic">Take a Picture</string>
+    <string name="submit">Submit</string>
+
 </resources>
