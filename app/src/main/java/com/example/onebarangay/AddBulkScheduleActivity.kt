@@ -22,9 +22,9 @@ class AddBulkScheduleActivity : AppCompatActivity() {
 }
 
 // To check a checkbox
-checkbox.isChecked = true
+// checkbox.isChecked = true
 
 // To listen for a checkbox's checked/unchecked state changes
-checkbox.setOnCheckedChangeListener { buttonView, isChecked
+// checkbox.setOnCheckedChangeListener { buttonView, isChecked
     // Responds to checkbox being checked/unchecked
-}
+// }
