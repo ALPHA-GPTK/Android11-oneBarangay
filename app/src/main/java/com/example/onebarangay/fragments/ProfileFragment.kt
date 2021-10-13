@@ -10,6 +10,7 @@ import android.widget.ArrayAdapter
 import android.widget.AutoCompleteTextView
 import com.example.onebarangay.EditUserProfileActivity
 import com.example.onebarangay.R
+import com.google.firebase.firestore.FirebaseFirestore
 import kotlinx.android.synthetic.main.activity_edit_user_profile.view.*
 import kotlinx.android.synthetic.main.fragment_profile.*
 
@@ -23,13 +24,11 @@ class ProfileFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        val view = inflater.inflate(R.layout.fragment_profile, container, false)
+        return inflater.inflate(R.layout.fragment_profile, container, false)
 
-        view.editUserProfileBtn.setOnClickListener {
-            startActivity(Intent(context, EditUserProfileActivity::class.java))
-        }
-
-        return view
+//        view.editUserProfileBtn.setOnClickListener {
+//            startActivity(Intent(context, EditUserProfileActivity::class.java))
+//        }
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -40,5 +39,6 @@ class ProfileFragment : Fragment() {
         (gendDrop.editText as? AutoCompleteTextView)?.setAdapter(adapter)
 
     }
+
 
 }
