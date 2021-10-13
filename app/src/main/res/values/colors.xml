@@ -13,4 +13,5 @@
     <!--  ALPHA Colors  -->
     <color name="alphaGray">#A0A1A3</color>
     <color name="alphaBlue">#004FA6</color>
+    <color name="alphaRed">#EB5757</color>
 </resources>

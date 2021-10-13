@@ -91,4 +91,16 @@
     <!--  For Reschedule Appointments  -->
     <string name="reschedBtn">Reschedule</string>
 
+    <!-- For Dialogs -->
+    <string name="successTitle">Success</string>
+    <string name="error">Error</string>
+    <string name="okay">Okay</string>
+    <string name="close">Close</string>
+    <string name="successDesc">You have successfully scheduled a bulk appointment!</string>
+    <string name="successReSchedApptmntDesc">You have successfully rescheduled an appointment!</string>
+    <string name="reportDesc">You have successfully reported!</string>
+    <string name="cancelApptmntDesc">You have successfully cancelled an appointment!</string>
+    <string name="resNotFnd">Resident not found!</string>
+    <string name="successReserveApptmnt">You have successfully reserved an appointment!</string>
+
 </resources>
