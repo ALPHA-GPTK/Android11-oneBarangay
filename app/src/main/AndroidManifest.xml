@@ -35,9 +35,6 @@
             android:name=".LoginActivity"
             android:exported="true" />
         <activity
-            android:name=".ForRV"
-            android:exported="true" />
-        <activity
             android:name=".ChangePasswordActivity"
             android:exported="true" />
         <activity
