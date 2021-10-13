@@ -3,13 +3,14 @@ package com.example.onebarangay
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.onebarangay.fragments.DashboardFragment
 import com.example.onebarangay.fragments.NotificationsFragment
 import com.example.onebarangay.fragments.ProfileFragment
 import com.example.onebarangay.fragments.ServicesFragment
-import com.google.android.material.bottomnavigation.BottomNavigationItemView
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.fragment_dashboard.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -57,14 +58,24 @@ class MainActivity : AppCompatActivity() {
 //            true
 //        }
 
-//        val adapter = ItemAdapter()
-//        announcementRV.layoutManager = LinearLayoutManager(this)
-//        announcementRV.adapter = adapter
-
         val navView: BottomNavigationView = findViewById(R.id.nav_view)
         navView.setOnNavigationItemSelectedListener(onNavigationItemSelectedListener)
 
         moveToFragment(DashboardFragment())
+
+        // Announcement Module
+        val arrayList = ArrayList<Model>()
+
+        arrayList.add(Model("Announcement 1", "Mon, 05 July 2021", "09:00 - 11:00 AM", "Announcement 1 Description", R.drawable.dice))
+        arrayList.add(Model("Announcement 2", "Mon, 06 July 2021", "09:00 - 11:00 AM", "Announcement 2 Description", R.drawable.dice))
+        arrayList.add(Model("Announcement 3", "Mon, 07 July 2021", "09:00 - 11:00 AM", "Announcement 3 Description", R.drawable.dice))
+        arrayList.add(Model("Announcement 4", "Mon, 08 July 2021", "09:00 - 11:00 AM", "Announcement 4 Description", R.drawable.dice))
+        arrayList.add(Model("Announcement 5", "Mon, 09 July 2021", "09:00 - 11:00 AM", "Announcement 5 Description", R.drawable.dice))
+
+        val announcementAdapter = AnnouncementAdapter(arrayList, this)
+
+        rv_announcement.layoutManager = LinearLayoutManager(this)
+        rv_announcement.adapter = announcementAdapter
 
     }
 
