@@ -98,7 +98,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="4dp"
                 android:backgroundTint="@color/alphaBlue"
-                android:drawableLeft="@drawable/cancel_icon"
+                android:drawableLeft="@drawable/cancel_icon_white"
                 android:text="@string/cancel" />
 
         </LinearLayout>

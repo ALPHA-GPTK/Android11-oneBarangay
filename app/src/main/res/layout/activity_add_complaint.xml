@@ -42,7 +42,7 @@
                 android:id="@+id/complaintTitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/complaintTypeText"
+                android:text="@string/complaintType"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent" />
         </LinearLayout>
@@ -159,7 +159,7 @@
                 android:id="@+id/complaintNarrativeText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Complaint Narrative" />
+                android:text="@string/complaintNarrative" />
 
             <com.google.android.material.textfield.TextInputLayout
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
@@ -189,22 +189,24 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/doneBtn"
+                android:id="@+id/cancelBtn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginRight="4dp"
-                android:backgroundTint="@color/alphaBlue"
-                android:drawableLeft="@drawable/check_icon"
-                android:text="@string/done" />
+                android:backgroundTint="@color/alphaGray"
+                android:drawableLeft="@drawable/cancel_icon_white"
+                android:text="@string/cancel" />
 
             <Button
-                android:id="@+id/cancelBtn"
+                android:id="@+id/doneBtn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="4dp"
                 android:backgroundTint="@color/alphaBlue"
-                android:drawableLeft="@drawable/cancel_icon"
-                android:text="@string/cancel" />
+                android:drawableLeft="@drawable/check_icon"
+                android:text="@string/done" />
+
+
 
         </LinearLayout>
 
