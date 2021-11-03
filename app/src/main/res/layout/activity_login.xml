@@ -31,21 +31,6 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginStart="32dp"
-            android:layout_marginEnd="32dp"
-            android:orientation="vertical">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Email Address"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent" />
-        </LinearLayout>
-
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/emailLogin"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
@@ -53,53 +38,41 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
             android:layout_marginEnd="32dp"
-            android:hint="Enter Email Address"
-            app:errorEnabled="true"
             app:helperTextTextColor="#FF0000"
-            app:hintEnabled="true"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent">
+            app:layout_constraintStart_toStartOf="parent"
+            app:errorEnabled="true"
+            app:hintEnabled="true">
 
-            <com.google.android.material.textfield.TextInputEditText
+            <EditText
+                android:id="@+id/emailLoginInput"
                 android:layout_width="match_parent"
-                android:layout_height="50dp" />
+                android:layout_height="50dp"
+                android:hint="@string/emailAddress"
+                android:inputType="textEmailAddress" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginStart="32dp"
-            android:layout_marginEnd="32dp"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/complaintTitle"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Password"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent" />
-        </LinearLayout>
-
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/pwdLogin"
+            android:id="@+id/passwordLogin"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
             android:layout_marginEnd="32dp"
-            android:hint="Enter Password"
-            app:errorEnabled="true"
             app:helperTextTextColor="#FF0000"
-            app:hintEnabled="true"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent">
+            app:layout_constraintStart_toStartOf="parent"
+            app:passwordToggleEnabled="true"
+            app:errorEnabled="true"
+            app:hintEnabled="true">
 
-            <com.google.android.material.textfield.TextInputEditText
+            <EditText
+                android:id="@+id/passwordLoginInput"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:inputType="textPassword" />
+                android:inputType="textPassword"
+                android:hint="@string/password" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -113,12 +86,13 @@
             android:orientation="vertical">
 
             <Button
-                android:id="@+id/submitBtn"
+                android:id="@+id/loginBtn"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginBottom="10dp"
                 android:backgroundTint="@color/alphaBlue"
-                android:text="@string/loginBtn" />
+                android:text="@string/loginBtn"
+                android:textAllCaps="false"/>
 
             <Button
                 android:id="@+id/signUpLinkBtn"
