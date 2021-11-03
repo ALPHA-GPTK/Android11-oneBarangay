@@ -9,6 +9,7 @@ import android.util.Patterns
 import android.widget.Toast
 import androidx.appcompat.app.ActionBar
 import com.example.onebarangay.databinding.ActivityLoginBinding
+import com.example.onebarangay.fragments.DashboardFragment
 import com.example.onebarangay.fragments.ProfileFragment
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_login.*
@@ -94,7 +95,7 @@ class LoginActivity : AppCompatActivity() {
                 Toast.makeText(this, "Logged In as $email", Toast.LENGTH_SHORT).show()
 
                 // Open Profile
-                startActivity(Intent(this, ProfileFragment::class.java))
+                startActivity(Intent(this, DashboardFragment::class.java))
                 finish()
 
             }
@@ -112,7 +113,7 @@ class LoginActivity : AppCompatActivity() {
 
         if (firebaseUser != null) {
             // User is already logged in
-            startActivity(Intent(this, ProfileFragment::class.java))
+            startActivity(Intent(this, DashboardFragment::class.java))
             finish()
         }
     }
