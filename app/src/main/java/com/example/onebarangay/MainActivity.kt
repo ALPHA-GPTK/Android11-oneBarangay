@@ -2,13 +2,16 @@ package com.example.onebarangay
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.example.onebarangay.fragments.DashboardFragment
 import com.example.onebarangay.fragments.NotificationsFragment
 import com.example.onebarangay.fragments.ProfileFragment
 import com.example.onebarangay.fragments.ServicesFragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.google.firebase.firestore.*
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.fragment_dashboard.*
 
@@ -18,6 +21,12 @@ class MainActivity : AppCompatActivity() {
 //    private val servicesFragment = ServicesFragment()
 //    private val notificationFragment = NotificationsFragment()
 //    private val profileFragment = ProfileFragment()
+
+    // For Firestore
+    private lateinit var recyclerView: RecyclerView
+    private lateinit var announcementArrayList : ArrayList<Announcement>
+    private lateinit var announcementAdapter : AnnouncementAdapter
+    private lateinit var db : FirebaseFirestore
 
     private val onNavigationItemSelectedListener = BottomNavigationView.OnNavigationItemSelectedListener { item ->
         when (item.itemId) {
@@ -58,25 +67,65 @@ class MainActivity : AppCompatActivity() {
 //            true
 //        }
 
+
+        // For Firestore
+        recyclerView = findViewById(R.id.rv_announcement)
+        recyclerView.layoutManager = LinearLayoutManager(this)
+        recyclerView.setHasFixedSize(true)
+
+        announcementArrayList = arrayListOf()
+
+        announcementAdapter = AnnouncementAdapter(announcementArrayList)
+
+        recyclerView.adapter = announcementAdapter
+
+        EventChangeListener()
+
+        ////
         val navView: BottomNavigationView = findViewById(R.id.nav_view)
         navView.setOnNavigationItemSelectedListener(onNavigationItemSelectedListener)
 
         moveToFragment(DashboardFragment())
 
         // Announcement Module
-        val arrayList = ArrayList<Model>()
+//        val arrayList = ArrayList<Model>()
+//
+//        arrayList.add(Model("Announcement 1", "Mon, 05 July 2021", "09:00 - 11:00 AM", "Announcement 1 Description", R.drawable.dice))
+//        arrayList.add(Model("Announcement 2", "Mon, 06 July 2021", "09:00 - 11:00 AM", "Announcement 2 Description", R.drawable.dice))
+//        arrayList.add(Model("Announcement 3", "Mon, 07 July 2021", "09:00 - 11:00 AM", "Announcement 3 Description", R.drawable.dice))
+//        arrayList.add(Model("Announcement 4", "Mon, 08 July 2021", "09:00 - 11:00 AM", "Announcement 4 Description", R.drawable.dice))
+//        arrayList.add(Model("Announcement 5", "Mon, 09 July 2021", "09:00 - 11:00 AM", "Announcement 5 Description", R.drawable.dice))
+//
+//        val announcementAdapter = AnnouncementAdapter(arrayList, this)
+//
+//        rv_announcement.layoutManager = LinearLayoutManager(this)
+//        rv_announcement.adapter = announcementAdapter
 
-        arrayList.add(Model("Announcement 1", "Mon, 05 July 2021", "09:00 - 11:00 AM", "Announcement 1 Description", R.drawable.dice))
-        arrayList.add(Model("Announcement 2", "Mon, 06 July 2021", "09:00 - 11:00 AM", "Announcement 2 Description", R.drawable.dice))
-        arrayList.add(Model("Announcement 3", "Mon, 07 July 2021", "09:00 - 11:00 AM", "Announcement 3 Description", R.drawable.dice))
-        arrayList.add(Model("Announcement 4", "Mon, 08 July 2021", "09:00 - 11:00 AM", "Announcement 4 Description", R.drawable.dice))
-        arrayList.add(Model("Announcement 5", "Mon, 09 July 2021", "09:00 - 11:00 AM", "Announcement 5 Description", R.drawable.dice))
+    }
 
-        val announcementAdapter = AnnouncementAdapter(arrayList, this)
+    private fun EventChangeListener() {
 
-        rv_announcement.layoutManager = LinearLayoutManager(this)
-        rv_announcement.adapter = announcementAdapter
+        db = FirebaseFirestore.getInstance()
+        db.collection("announcements").
+        addSnapshotListener(object : EventListener<QuerySnapshot> {
+            override fun onEvent (
+                value: QuerySnapshot?,
+                error: FirebaseFirestoreException?
+            ) {
+                if (error != null) {
+                    Log.e("Firestore Error", error.message.toString())
+                    return
+                }
 
+                for (dc : DocumentChange in value?.documentChanges!!) {
+                    if (dc.type == DocumentChange.Type.ADDED) {
+                        announcementArrayList.add(dc.document.toObject(Announcement::class.java))
+                    }
+                }
+
+                announcementAdapter.notifyDataSetChanged()
+            }
+        })
     }
 
     private fun moveToFragment(fragment: Fragment) {
@@ -93,4 +142,5 @@ class MainActivity : AppCompatActivity() {
 //            transaction.commit()
 //        }
 //    }
+
 }

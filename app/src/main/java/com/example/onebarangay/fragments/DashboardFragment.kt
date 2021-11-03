@@ -6,12 +6,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
 import com.example.onebarangay.AnnouncementAdapter
-import com.example.onebarangay.Model
 import com.example.onebarangay.R
-import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.android.synthetic.main.fragment_dashboard.*
+import kotlinx.android.synthetic.main.activity_main.view.*
 
 /**
  * A simple [Fragment] subclass.
@@ -30,6 +27,9 @@ class DashboardFragment : Fragment() {
 //        recyclerView = view.findViewById(R.id.rv_announcement)
 //        recyclerView.layoutManager = LinearLayoutManager(context)
 
+//        view.rv_announcement.layoutManager = LinearLayoutManager(activity)
+//        view.rv_announcement.adapter = AnnouncementAdapter()
+
         return view
     }
 
@@ -41,5 +41,4 @@ class DashboardFragment : Fragment() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
     }
-
 }

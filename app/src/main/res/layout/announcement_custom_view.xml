@@ -39,21 +39,21 @@
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/announcement_date"
+            android:id="@+id/announcement_created"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="14sp"
-            android:text="Date"
+            android:text="Created"
             android:layout_toEndOf="@+id/announcement_img"
             android:layout_marginStart="20dp"
             android:layout_marginTop="30dp"/>
 
         <TextView
-            android:id="@+id/announcement_time"
+            android:id="@+id/announcement_category"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="14sp"
-            android:text="Time"
+            android:text="Category"
             android:layout_toEndOf="@+id/announcement_img"
             android:layout_marginStart="20dp"
             android:layout_marginTop="50dp"/>
