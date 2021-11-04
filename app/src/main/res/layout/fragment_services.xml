@@ -4,15 +4,20 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context="com.example.onebarangay.fragments.ServicesFragment">
+    tools:context="com.example.onebarangay.fragments.ServicesFragment"
+    android:id="@+id/serviceRL">
 
     <TextView
         android:id="@+id/servicesTxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginBottom="42dp"
         android:text="@string/services"
-        android:layout_margin="32dp"
-        android:textSize="32sp"
+        android:textColor="@color/black"
+        android:textSize="26sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.166"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -36,39 +41,66 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/vAppointmentBtn"
+                android:id="@+id/viewAppointmentBtn"
                 style="@style/Widget.MaterialComponents.Button.OutlinedButton"
                 android:layout_width="@dimen/box_size_btn"
                 android:layout_height="@dimen/box_size_btn"
-                android:layout_margin="8dp"
                 android:drawableTop="@drawable/view_appointment"
                 android:text="@string/vAppointment"
                 android:textColor="@android:color/black"
+                android:textAllCaps="false"
+                android:padding="15dp"
+                android:layout_marginRight="5dp"
                 app:cornerRadius="8dp" />
 
             <Button
-                android:id="@+id/vReportsBtn"
+                android:id="@+id/viewReportsBtn"
                 style="@style/Widget.MaterialComponents.Button.OutlinedButton"
                 android:layout_width="@dimen/box_size_btn"
                 android:layout_height="@dimen/box_size_btn"
-                android:layout_margin="8dp"
+                android:layout_marginLeft="5dp"
                 android:drawableTop="@drawable/view_reports"
-                android:text="@string/vReports"
+                android:padding="15dp"
+                android:text="@string/vComplaints"
+                android:textAllCaps="false"
                 android:textColor="@android:color/black"
                 app:cornerRadius="8dp" />
 
         </LinearLayout>
 
-        <Button
-            android:id="@+id/sDocuBtn"
-            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-            android:layout_width="@dimen/box_size_btn"
-            android:layout_height="@dimen/box_size_btn"
-            android:layout_margin="8dp"
-            android:drawableTop="@drawable/scan_document"
-            android:text="@string/sDocu"
-            android:textColor="@android:color/black"
-            app:cornerRadius="8dp" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/bulkSchedBtn"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="@dimen/box_size_btn"
+                android:layout_height="@dimen/box_size_btn"
+                android:drawableTop="@drawable/bulk_schedule"
+                android:text="@string/bSched"
+                android:textColor="@android:color/black"
+                android:textAllCaps="false"
+                android:padding="15dp"
+                android:layout_marginRight="5dp"
+                app:cornerRadius="8dp" />
+
+            <Button
+                android:id="@+id/scanDocuBtn"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="@dimen/box_size_btn"
+                android:layout_height="@dimen/box_size_btn"
+                android:drawableTop="@drawable/scan_document"
+                android:text="@string/sDocu"
+                android:textColor="@android:color/black"
+                android:textAllCaps="false"
+                android:padding="15dp"
+                android:layout_marginLeft="5dp"
+                app:cornerRadius="8dp" />
+
+        </LinearLayout>
 
     </LinearLayout>
 

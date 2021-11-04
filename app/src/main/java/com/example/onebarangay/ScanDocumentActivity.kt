@@ -17,7 +17,7 @@ import java.io.IOException
 
 class ScanDocumentActivity : AppCompatActivity() {
 
-    companion object{
+    companion object {
         private val TAG= MainActivity::class.simpleName
     }
 

@@ -4,6 +4,7 @@
 
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -14,25 +15,43 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.OneBarangay">
         <activity
+            android:name=".UploadComplaintProof"
+            android:exported="true" />
+        <activity
+            android:name=".ResidentViewComplaintActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ResidentAddComplaintActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ResidentReserveAppointmentActivity"
+            android:exported="true" />
+        <activity
+            android:name=".AdminViewComplaintsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".AdminComplaintDetailsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ResidentAppointmentDetailsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".AdminAppointmentDetailsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".AddBulkScheduleActivity"
+            android:exported="true" />
+        <activity
             android:name=".SignUpActivity"
             android:exported="true" />
         <activity
             android:name=".LoginActivity"
-            android:exported="true" />
-        <activity
-            android:name=".ViewReportsActivity"
             android:exported="true" />
         <activity
             android:name=".ScanDocumentActivity"
             android:exported="true" />
         <activity
             android:name=".ViewAppointmentActivity"
-            android:exported="true" />
-        <activity
-            android:name=".SignUpActivity"
-            android:exported="true" />
-        <activity
-            android:name=".LoginActivity"
             android:exported="true" />
         <activity
             android:name=".ChangePasswordActivity"
@@ -58,7 +77,6 @@
         <meta-data
             android:name="com.google.mlkit.vision.DEPENDENCIES"
             android:value="ocr" />
-
     </application>
 
 </manifest>

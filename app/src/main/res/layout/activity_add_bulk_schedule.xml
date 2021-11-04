@@ -1,24 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".AddBulkScheduleActivity">
-
-    <TextView
-        android:id="@+id/bulkSched"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Bulk Schedule"
-        android:textColor="@color/black"
-        android:textSize="26sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.121"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.028" />
 
     <ScrollView
         android:layout_width="match_parent"
@@ -26,15 +13,25 @@
         android:layout_marginTop="32dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bulkSched"
         app:layout_constraintVertical_bias="1.0">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="26sp"
+                android:text="@string/bSched"
+                android:textColor="@color/black"
+                android:layout_marginTop="22dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="32dp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -43,12 +40,13 @@
                 android:layout_marginEnd="32dp">
 
                 <TextView
+                    android:id="@+id/eventTypeTxt"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Event Type"
+                    android:text="@string/eventType"
+                    android:layout_marginBottom="8dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent" />
-
             </LinearLayout>
 
             <com.google.android.material.textfield.TextInputLayout
@@ -69,9 +67,9 @@
                 <AutoCompleteTextView
                     android:id="@+id/eventDrop"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
                     android:inputType="none" />
-
             </com.google.android.material.textfield.TextInputLayout>
 
             <LinearLayout
@@ -126,7 +124,6 @@
 
                 </com.google.android.material.textfield.TextInputLayout>
 
-
                 <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/timeDrop"
                     style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
@@ -147,6 +144,7 @@
                         android:layout_height="match_parent"
                         android:inputType="none" />
                 </com.google.android.material.textfield.TextInputLayout>
+
             </LinearLayout>
 
             <LinearLayout
@@ -154,7 +152,9 @@
                 android:layout_height="match_parent"
                 android:layout_marginStart="32dp"
                 android:layout_marginEnd="32dp"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
 
                 <TextView
                     android:layout_width="43dp"
@@ -203,24 +203,26 @@
 
                 <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/areaDrop"
-                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="4dp"
                     android:layout_marginLeft="4dp"
                     android:hint="@string/areaText"
+                    app:endIconMode="clear_text"
                     app:errorEnabled="true"
                     app:helperTextTextColor="#FF0000"
                     app:hintEnabled="true"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent">
 
-                    <AutoCompleteTextView
-                        android:id="@+id/areaDropdown"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:inputType="none" />
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="175dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="text" />
+
                 </com.google.android.material.textfield.TextInputLayout>
+
             </LinearLayout>
 
             <LinearLayout
@@ -251,21 +253,22 @@
                 android:layout_marginEnd="32dp"
                 android:orientation="horizontal">
 
-                <EditText
-                    android:id="@+id/editDateInterval"
+                <TextView
+                    android:id="@+id/bulkSched_editDateInterval"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:hint="MM/DD/YYYY"
                     android:layout_weight="1"
-                    android:ems="10"
-                    android:inputType="date" />
+                    android:ems="10" />
 
-                <EditText
-                    android:id="@+id/editTimeInterval"
+                <TextView
+                    android:id="@+id/bulkSched_editTimeInterval"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:hint="HH:MM"
                     android:layout_weight="1"
-                    android:ems="10"
-                    android:inputType="time" />
+                    android:ems="10" />
+
             </LinearLayout>
 
             <LinearLayout
@@ -279,6 +282,7 @@
                     android:layout_width="36dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:layout_marginTop="12dp"
                     android:text="Notification Type" />
 
             </LinearLayout>
@@ -322,22 +326,24 @@
                 android:orientation="horizontal">
 
                 <Button
-                    android:id="@+id/doneBtn"
+                    android:id="@+id/bulkSched_cancelBtn"
+                    style="?attr/materialButtonOutlinedStyle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginRight="4dp"
-                    android:backgroundTint="@color/alphaBlue"
-                    android:drawableLeft="@drawable/check_icon"
-                    android:text="@string/done" />
+                    android:drawableLeft="@drawable/cancel_icon_blue"
+                    android:padding="12dp"
+                    android:text="@string/cancel" />
 
                 <Button
-                    android:id="@+id/cancelBtn"
+                    android:id="@+id/bulkSched_doneBtn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="4dp"
                     android:backgroundTint="@color/alphaBlue"
-                    android:drawableLeft="@drawable/cancel_icon"
-                    android:text="@string/cancel" />
+                    android:padding="10dp"
+                    android:drawableLeft="@drawable/check_icon"
+                    android:text="@string/done" />
 
             </LinearLayout>
 

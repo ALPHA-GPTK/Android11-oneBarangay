@@ -6,10 +6,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.example.onebarangay.R
-import com.example.onebarangay.ScanDocumentActivity
-import com.example.onebarangay.ViewAppointmentActivity
-import com.example.onebarangay.ViewReportsActivity
+import android.widget.Toast
+import com.example.onebarangay.*
 import kotlinx.android.synthetic.main.fragment_services.view.*
 
 /**
@@ -24,18 +22,20 @@ class ServicesFragment : Fragment() {
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_services, container, false)
 
-        view.vAppointmentBtn.setOnClickListener {
+        view.viewAppointmentBtn.setOnClickListener {
             startActivity(Intent(context, ViewAppointmentActivity::class.java))
         }
 
-        view.vReportsBtn.setOnClickListener {
-            startActivity(Intent(context, ViewReportsActivity::class.java))
-
+        view.viewReportsBtn.setOnClickListener {
+            startActivity(Intent(context, ResidentViewComplaintActivity::class.java))
         }
 
-        view.sDocuBtn.setOnClickListener {
-            startActivity(Intent(context, ScanDocumentActivity::class.java))
+        view.bulkSchedBtn.setOnClickListener {
+             startActivity(Intent(context, AddBulkScheduleActivity::class.java))
+        }
 
+        view.scanDocuBtn.setOnClickListener {
+            startActivity(Intent(context, ScanDocumentActivity::class.java))
         }
 
         return view
