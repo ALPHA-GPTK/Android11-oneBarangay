@@ -27,7 +27,7 @@ class ServicesFragment : Fragment() {
         }
 
         view.viewReportsBtn.setOnClickListener {
-            startActivity(Intent(context, AdminViewComplaintsActivity::class.java))
+            startActivity(Intent(context, ResidentViewComplaintActivity::class.java))
         }
 
         view.bulkSchedBtn.setOnClickListener {
